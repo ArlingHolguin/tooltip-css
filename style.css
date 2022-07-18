@@ -1,16 +1,16 @@
-  /* tolptip  */
+   /* tolptip  */
         .tool {
             position: relative;
             display: inline-block;
             border-bottom: 1px dotted black;
-            cursor:zoom-in;
+            cursor:pointer;
 
         }
 
         .tool .tiptext {
             visibility: hidden;
             width: 150px;
-            background-color: black;
+            background-color: #124256;
             color: #fff;
             text-align: center;
             font-size: 11px;
@@ -44,7 +44,7 @@
             margin-left: -5px;
             top: 100%;
             left: 50%;
-            border-color: #2E2E2E transparent transparent transparent;
+            border-color: #124256 transparent transparent transparent;
         }
 
         /* tool abajo  */
@@ -86,6 +86,7 @@
             right: 100%;
             border-color: transparent #2E2E2E transparent transparent;
         }
+
 
         /*uso html*/
         /* <div class="tool top">Posa el ratón encima de mi <span class="tiptext">Texto del tool</span></div> */
