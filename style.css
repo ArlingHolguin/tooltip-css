@@ -3,19 +3,23 @@
             position: relative;
             display: inline-block;
             border-bottom: 1px dotted black;
+            cursor:zoom-in;
+
         }
 
         .tool .tiptext {
             visibility: hidden;
-            width: 120px;
+            width: 150px;
             background-color: black;
             color: #fff;
             text-align: center;
+            font-size: 11px;
             border-radius: 3px;
             padding: 6px 0;
             position: absolute;
             z-index: 1;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
         }
 
         .tool .tiptext::after {
@@ -83,4 +87,5 @@
             border-color: transparent #2E2E2E transparent transparent;
         }
 
+        /*uso html*/
         /* <div class="tool top">Posa el ratón encima de mi <span class="tiptext">Texto del tool</span></div> */
