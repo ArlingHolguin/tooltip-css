@@ -1,4 +1,8 @@
-   /* tolptip  */
+.box {
+  display: flex;
+  align-items: stretch;
+}   
+/* tolptip  */
         .tool {
             position: relative;
             display: inline-block;
