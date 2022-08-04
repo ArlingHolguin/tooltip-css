@@ -118,7 +118,7 @@
 
 # HTML
 <pre><code>
-<div class="tool top">Tool Top
+/*<div class="tool top">Tool Top
         <span class="tiptext hvr-bounce-in">Texto del tool top<a href="http://hola.com">Hola</a></span>
     </div>
     <button class="tool right">Top right
@@ -135,5 +135,5 @@
             </path>
         </svg>
         <span class="tiptext hvr-bounce-in">Texto del tool left</span>
-    </div>
+    </div>*/
 </code></pre>
