@@ -1,4 +1,4 @@
-# Cajero Automatico con JavaScript
+# Tooltips con css y html
 ### Hola 👋, ToolTips css <img src='https://github.githubassets.com/images/mona-loading-default.gif' alt='github' height='30'>
 [Link del Proyecto](https://arlingholguin.github.io/cajero/)  
 # css
