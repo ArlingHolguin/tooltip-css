@@ -1,97 +1,126 @@
-.box {
-  display: flex;
-  align-items: stretch;
-}   
+html {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 200px;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
 /* tolptip  */
-        .tool {
-            position: relative;
-            display: inline-block;
-            /* border-bottom: 1px dotted black; */
-            cursor: pointer;
 
-        }
+.tool {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+    cursor: pointer;
+}
 
-        .tool .tiptext {
-            visibility: hidden;
-            width: 150px;
-            background-color: #124256;
-            color: #fff;
-            text-align: center;
-            font-size: 11px;
-            border-radius: 3px;
-            padding: 6px 0;
-            position: absolute;
-            z-index: 1;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-        }
+.tool .tiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #124256;
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    border-radius: 3px;
+    padding: 6px 0;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
 
-        .tool .tiptext::after {
-            content: "";
-            position: absolute;
-            border-width: 5px;
-            border-style: solid;
-        }
+.tool .tiptext::after {
+    content: "";
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+}
 
-        .tool:hover .tiptext {
-            visibility: visible;
-        }
+.tool:hover .tiptext {
+    visibility: visible;
+}
 
-        /* toltip top  */
-        .tool.top .tiptext {
-            margin-left: -60px;
-            bottom: 150%;
-            left: 50%;
-        }
 
-        .tool.top .tiptext::after {
-            margin-left: -5px;
-            top: 100%;
-            left: 50%;
-            border-color: #124256 transparent transparent transparent;
-        }
+/* toltip top  */
 
-        /* tool abajo  */
-        .tool.bottom .tiptext {
-            margin-left: -60px;
-            top: 150%;
-            left: 50%;
-        }
+.tool.top .tiptext {
+    margin-left: -60px;
+    bottom: 150%;
+    left: 50%;
+}
 
-        .tool.bottom .tiptext::after {
-            margin-left: -5px;
-            bottom: 100%;
-            left: 50%;
-            border-color: transparent transparent #124256 transparent;
-        }
+.tool.top .tiptext::after {
+    margin-left: -5px;
+    top: 100%;
+    left: 50%;
+    border-color: #124256 transparent transparent transparent;
+}
 
-        /* tool izquierda */
-        .tool.left .tiptext {
-            top: -5px;
-            right: 110%;
-        }
 
-        .tool.left .tiptext::after {
-            margin-top: -5px;
-            top: 50%;
-            left: 100%;
-            border-color: transparent transparent transparent #124256;
-        }
+/* tool abajo  */
 
-        /* tool derecha  */
-        .tool.right .tiptext {
-            top: -5px;
-            left: 110%;
-        }
+.tool.bottom .tiptext {
+    margin-left: -60px;
+    top: 150%;
+    left: 50%;
+}
 
-        .tool.right .tiptext::after {
-            margin-top: -5px;
-            top: 50%;
-            right: 100%;
-            border-color: transparent #124256 transparent transparent;
-        }
+.tool.bottom .tiptext::after {
+    margin-left: -5px;
+    bottom: 100%;
+    left: 50%;
+    border-color: transparent transparent #124256 transparent;
+}
+
+
+/* tool izquierda */
+
+.tool.left .tiptext {
+    top: -5px;
+    right: 110%;
+}
+
+.tool.left .tiptext::after {
+    margin-top: -5px;
+    top: 50%;
+    left: 100%;
+    border-color: transparent transparent transparent #124256;
+}
+
+
+/* tool derecha  */
+
+.tool.right .tiptext {
+    top: -5px;
+    left: 110%;
+}
+
+.tool.right .tiptext::after {
+    margin-top: -5px;
+    top: 50%;
+    right: 100%;
+    border-color: transparent #124256 transparent transparent;
+}
+
 
 /*hover*/
+
+
 /* Bounce In */
 
 .hvr-bounce-in {
